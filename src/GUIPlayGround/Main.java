@@ -47,8 +47,10 @@ public class Main extends Application {
         //Cancel Handler
         CancelHandlerClass cancelHand = new CancelHandlerClass();
         btCancel.setOnMouseReleased(cancelHand);
-        //Lamdba Handler
-
+        //Lambda Handler
+        btLamdba.setOnMouseClicked(event -> {
+            System.out.println("It's Lambda time, Baby!");
+        });
 
         btPane.getChildren().addAll(btOK,btnotOk,btCancel,btLamdba);
         btPane.setPrefSize(300,100);
